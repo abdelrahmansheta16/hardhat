@@ -51,9 +51,6 @@ contract ERC20 {
         emit Transfer(address(0), to, value);
     }
 
-    function burn(address to, uint256 value) external {
-        _burn(to, value);
-    }
 
     function Deposit() external payable {
         balanceOf[msg.sender] += msg.value;
